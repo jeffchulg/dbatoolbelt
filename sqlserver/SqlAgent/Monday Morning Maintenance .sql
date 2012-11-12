@@ -75,7 +75,7 @@ EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Delete o
 		@os_run_priority=0, @subsystem=N'TSQL', 
 		@command=N'DECLARE @backupdate datetime
 
-SET @backupdate = DATEADD(d, -90, @backupdate)
+SET @backupdate = DATEADD(d, -90, getdate())
 
 EXEC sp_delete_backuphistory @backupdate', 
 		@database_name=N'msdb', 
