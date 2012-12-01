@@ -1,0 +1,617 @@
+<html>
+<body>
+<h3>Source: <a href="http://www.sqlservercentral.com/articles/SQL+Server+2008/63491/">http://www.sqlservercentral.com/articles/SQL+Server+2008/63491/</a> </h3>
+<h3>
+  Major Builds
+</h3>
+
+
+<table border="1">
+  <tbody>
+    <tr>
+      <td>
+        <b>Version</b></td>
+      <td>
+        <b>Build</b></td>
+      <td>
+        <b>KB Article</b></td>
+    </tr>
+    <tr>
+      <td>
+        Service Pack 3 for SQL Server 2008</td>
+      <td>
+        <b>10.0.5500</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2546951">2546951</a></td>
+    </tr>
+    <tr>
+      <td>
+        Service Pack 2 for SQL Server 2008</td>
+      <td>
+        <b>10.0.4000.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/968369/">968369</a></td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+      <td>
+        Service Pack 1 for SQL Server 2008</td>
+      <td>
+        <b>10.0.2531.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/968369/">968369</a></td>
+    </tr>
+    <tr>
+      <td>
+        RTM</td>
+      <td>
+        <b>10.0.1600.22</b></td>
+      <td>
+        N/A</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  Note that Service Packs include all builds below that Service Pack level. So any builds listed below Service Pack 1 are included in Service Pack 1. Those below Service Pack 2 (including Service Pack 1), are included in SP2, etc. Hotfixes may or may not include updates below them because there are two trees of code. The cumulative updates do include all hotfixes before them.
+</p>
+<p>
+  You can also download a CSV of the builds attached to this article.
+</p>
+<table width="100%">
+  <tbody>
+    <tr>
+      <td width="10%">
+        <b>Build</b></td>
+      <td width="10%">
+        <b>KB Article</b></td>
+      <td width="40%">
+        <b>Title</b></td>
+      <td width="40%">
+        <b>Description</b></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.5788</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2715953/en-us">2715953</a></td>
+      <td style="vertical-align: top;">
+        Cumulative update package 6 for SQL Server 2008 Service Pack 3</td>
+      <td style="vertical-align: top;">
+        Fourteen fixes in here, covering a variety of areas. Quite a few SSAS items along with core DB issues.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.5785</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2696626" target="_blank">2696626</a></td>
+      <td style="vertical-align: top;">
+        Cumulative update package 5 for SQL Server 2008 Service Pack 3</td>
+      <td style="vertical-align: top;">
+        Four fixes: <a href="http://support.microsoft.com/kb/2567366">CDC performance</a>, <a href="http://support.microsoft.com/kb/2598903">Agent issues</a>, <a href="http://support.microsoft.com/kb/2504524">Analysis Services</a> issue, and an <a href="http://support.microsoft.com/kb/2706518">SSRS issue</a>.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.5775</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2673383">2673383</a></td>
+      <td style="vertical-align: top;">
+        Cumulative update package 4 for SQL Server 2008 Service Pack 3</td>
+      <td style="vertical-align: top;">
+        CU#4 includes a&nbsp;<a href="http://support.microsoft.com/kb/2671078">MERGE fix</a>,&nbsp;<a href="http://support.microsoft.com/kb/2498839">SSAS memory issues</a>,&nbsp;<a href="http://support.microsoft.com/kb/2680799">Full text issues</a>&nbsp;and&nbsp;<a href="http://support.microsoft.com/kb/2634571">DBCC improvements</a>.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.5770</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2648098">2648098</a></td>
+      <td style="vertical-align: top;">
+        Cumulative update package 3 for SQL Server 2008 Service Pack 3</td>
+      <td style="vertical-align: top;">
+        CU#3 includes fixes for <a href="http://support.microsoft.com/kb/2628126">Fulltext errors during compression</a>, <a href="http://support.microsoft.com/kb/2635827">DBCC errors with spatial data</a>, <a href="http://support.microsoft.com/kb/2653857">JDBC errors</a>, and more.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.5768.00</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2633143/en-us">2633143</a></td>
+      <td style="vertical-align: top;">
+        Cumulative update package 2 for SQL Server 2008 Service Pack 3</td>
+      <td style="vertical-align: top;">
+        CU #2 for SQL Server 2008 SP3 only has three fixes. A <a href="http://support.microsoft.com/kb/2522893">backup/change tracking issue</a>, <a href="http://support.microsoft.com/kb/2536225">CLR issue</a>, and a <a href="http://support.microsoft.com/kb/2629456">SSAS fix</a>.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.5766</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2617146/en-us">2617146</a></td>
+      <td style="vertical-align: top;">
+        <p class="title">
+          Cumulative update package 1 for SQL Server 2008 Service Pack 3
+        </p>
+      </td>
+      <td style="vertical-align: top;">
+        Cumulative update package 1 for SQL Server 2008 Service Pack 3 contains hotfixes for issues that were fixed after the release of Microsoft SQL Server 2008 Service Pack 3 (SP3).</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.5500</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2546951">2546951</a></td>
+      <td style="vertical-align: top;">
+        SQL Server 2008 Service Pack 3</td>
+      <td style="vertical-align: top;">
+        SP3</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.4333</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2715951/en-us">2715953</a></td>
+      <td style="vertical-align: top;">
+        CU #10 for SQL Server 2008 SP 2</td>
+      <td style="vertical-align: top;">
+        Teradata error fix in SSAS and a fix for Event 322 error.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.4332</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2696625" target="_blank">2696625</a></td>
+      <td style="vertical-align: top;">
+        CU #10 for SQL Server 2008 SP 2</td>
+      <td style="vertical-align: top;">
+        One client application issue with <a href="http://support.microsoft.com/kb/2543687">attention signals</a>.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.4330.00</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2673382/en-us">2673382</a></td>
+      <td style="vertical-align: top;">
+        CU#9 for SQL Server 2008 SP 2</td>
+      <td style="vertical-align: top;">
+        CU#9 includes a <a href="http://support.microsoft.com/kb/2671078">MERGE fix</a>, <a href="http://support.microsoft.com/kb/2498839">SSAS memory issues</a>, <a href="http://support.microsoft.com/kb/2680799">Full text issues</a> and <a href="http://support.microsoft.com/kb/2634571">DBCC improvements</a>.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.4326.00</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2648096">2648096</a></td>
+      <td style="vertical-align: top;">
+        CU#8 for SQL Server 2008 SP 2</td>
+      <td style="vertical-align: top;">
+        CU#8 includes fixes for <a href="http://support.microsoft.com/kb/2640027">Agent Job failures</a>, <a href="http://support.microsoft.com/kb/2629456">empty partition issues</a>, and <a href="http://support.microsoft.com/kb/2658214">poor query performance</a> among others.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.4323.00</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2617148/en-us">2617148</a></td>
+      <td style="vertical-align: top;">
+        SQL Server 2008 SP2 Cumulative Update 7</td>
+      <td style="vertical-align: top;">
+        CU #7 for SQL Server 2008 SP2. Fixes include <a href="http://support.microsoft.com/kb/2531172">MDX</a>, <a href="http://support.microsoft.com/kb/2598903">Agent scheduling</a>, <a href="http://support.microsoft.com/kb/2603910">change tracking</a>, and others.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.4321.0</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2582285/en-us">2582285</a></td>
+      <td style="vertical-align: top;">
+        SQL Server 2008 SP2 Cumulative Update 6&nbsp;</td>
+      <td style="vertical-align: top;">
+        CU #6 for SQL Server 2008 SP2. Fixes include SSRS and MDX query issues, a few replication bugs, and a few database engine issues with compression and sparse files.</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        <strong>10.00.4316.0</strong></td>
+      <td style="vertical-align: top;">
+        <a href="http://support.microsoft.com/kb/2582285/en-us">2582285</a></td>
+      <td style="vertical-align: top;">
+        SQL Server 2008 SP2 Cumulative Update 5</td>
+      <td style="vertical-align: top;">
+        CU #5 for SQL Server 2008 SP2. Fixed include issues with the data collector, replication issues with stored procedures and CDC backups. among others.</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>10.0.4311</strong></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2494094/">2494094</a></td>
+      <td>
+        <p>
+          MS11-049
+        </p>
+      </td>
+      <td>
+        security update for SQL Server 2008 Service Pack 2 QFE: June 14, 2011</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.4285.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2527180/en-us">2527180</a></td>
+      <td>
+        SQL Server 2008 SP2 Cumulative Update 4</td>
+      <td>
+        CU#4 for SQL Server 2008 Service Pack 2. Fixes include issues with Filestream, various T-SQL issues and some SSIS items among others.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.4279.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2498535/en-us">2498535</a></td>
+      <td>
+        SQL Server 2008 SP2 Cumulative Update 3</td>
+      <td>
+        CU#3 for SQL Server 2008 Service Pack 2. Fixes include issues with Merge replication, mirroring suspension issues, various T-SQL issues among others.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.4272.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2467239">2467239</a></td>
+      <td>
+        SQL Server 2008 SP2 Cumulative Update 2</td>
+      <td>
+        CU#2 for SQL Server 2008 Service Pack 2. Fixes include recovering LOB pages from failed inserts, custom resolver issues in replication, and issues with online index rebuilds among others.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.4266.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2289254">2289254</a></td>
+      <td>
+        SQL Server 2008 SP2 Cumulative Update 1</td>
+      <td>
+        The first CU after SQL Server 2008 Service Pack 2.</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>10.0.4064</strong></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2494089">2494089</a></td>
+      <td>
+        <p>
+          MS11-049: GDR
+        </p>
+      </td>
+      <td>
+        <p>
+          security update for SQL Server 2008 Service Pack 2 GDR: June 14, 2011
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.4000.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/?kbid=2285068">2285068</a></td>
+      <td>
+        SQL Server 2008 SP2</td>
+      <td>
+        The second service pack for SQL Server 2008.</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>10.00.2850.0</strong></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2582282">2582282</a></td>
+      <td>
+        Cumulative Update 16 for SQL Server 2008 SP1</td>
+      <td>
+        CU #16 for SQL Server 2008 SP1. Fixed include SSRS and MDX query issues, a few replication bugs, and a few database engine issues with compression and sparse files.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2847.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2527187/en-us">2527187</a></td>
+      <td>
+        Cumulative Update 15 for SQL Server 2008 SP1</td>
+      <td>
+        The 15th rollup of patches for Service Pack 1. Fixes include issues with the data collector, replication issues with stored procedures and CDC backups. among others.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2821.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2527187/en-us">2527187</a></td>
+      <td>
+        Cumulative Update 14 for SQL Server 2008 SP1</td>
+      <td>
+        The 14th rollup of patches for Service Pack 1. Fixes include backup issues, Browser issues, and various other fixes.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2816.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2497673/en-us">2497673</a></td>
+      <td>
+        Cumulative Update 13 for SQL Server 2008 SP1</td>
+      <td>
+        The 13th rollup of patches for Service Pack 1. Fixes include mirroring issues, Agent scheduling issues, and various T-SQL fixes.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2808.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2467236">2467236</a></td>
+      <td>
+        Cumulative Update 12 for SQL Server 2008 SP1</td>
+      <td>
+        The 12th rollup of patches for Service Pack 1. Fixes include clustering IPv6 problems, join performance fixes, and SSAS crashes.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2804.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2413738/">2413738</a></td>
+      <td>
+        Cumulative Update 11 for SQL Server 2008 SP1</td>
+      <td>
+        The 11th rollup of patches for Service Pack 1. Fixed include fixes for too many VLFs during recovery, MDX issues in BIDS, and a few analysis services fixes.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2799.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2279604/LN/">2279604</a></td>
+      <td>
+        Cumulative Update 10 for SQL Server 2008 SP1</td>
+      <td>
+        The tenth rollup of patches for Service Pack 1.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2789.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/2083921/en-us">2083921</a></td>
+      <td>
+        Cumulative Update 9 for SQL Server 2008 SP1</td>
+      <td>
+        The ninth rollup of patches for Service Pack 1.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2775.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;981702">981702</a></td>
+      <td>
+        Cumulative Update 8 for SQL Server 2008 SP1</td>
+      <td>
+        The eighth rollup of patches for Service Pack 1.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2766.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/979065/">979065</a></td>
+      <td>
+        Cumulative Update 7 for SQL Server 2008 SP1</td>
+      <td>
+        The sixth rollup of patches for Service Pack 1.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2757.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/default.aspx/kb/977443/en-us">977443</a></td>
+      <td>
+        Cumulative Update 6 for SQL Server 2008 SP1</td>
+      <td>
+        The sixth rollup of patches for Service Pack 1.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2746.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/default.aspx/kb/975977/en-us">975977</a></td>
+      <td>
+        Cumulative Update 5 for SQL Server 2008 SP1</td>
+      <td>
+        The fifth rollup of patches for Service Pack 1.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2734.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/973602/en-us">973602</a></td>
+      <td>
+        Cumulative Update 4 for SQL Server 2008 SP1</td>
+      <td>
+        The fourth rollup of patches for Service Pack 1.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2723.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/971491/en-us">971491</a></td>
+      <td>
+        Cumulative Update 3 for SQL Server 2008 SP1</td>
+      <td>
+        The third rollup of patches for Service Pack 1.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2714.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/970315/en-us">970315</a></td>
+      <td>
+        Cumulative Update 2 for SQL Server 2008 SP1</td>
+      <td>
+        The second roll-up of patches for Service Pack 1.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2710.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/969099/en-us">969099</a></td>
+      <td>
+        Cumulative Update 1 for SQL Server 2008 SP1</td>
+      <td>
+        The first roll-up of patches for Service Pack 1. Includes CU4 patches for RTM that didn&#39;t make it in SP1.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.2531.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/968369/">968369</a></td>
+      <td>
+        Service Pack 1 for SQL Server 2008</td>
+      <td>
+        SP1</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1835.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/979064/en-us">979064</a></td>
+      <td>
+        Cumulative Update 10 for SQL Server 2008</td>
+      <td>
+        The tenth rollup of patches for SQL Server 2008 RTM.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1828.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/977444/en-us">977444</a></td>
+      <td>
+        Cumulative Update 9 for SQL Server 2008</td>
+      <td>
+        The 9th roll-up of patches for SQL Server 2008 RTM.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1823.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/975976/en-us">975976</a></td>
+      <td>
+        Cumulative Update 8 for SQL Server 2008</td>
+      <td>
+        The 8th roll-up of patches for SQL Server 2008 RTM.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1818.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/973601/en-us">973601</a></td>
+      <td>
+        Cumulative Update 7 for SQL Server 2008</td>
+      <td>
+        The 7th roll-up of patches for SQL Server 2008 RTM.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1812.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/971490/en-us">971490</a></td>
+      <td>
+        Cumulative Update 6 for SQL Server 2008</td>
+      <td>
+        The 6th roll-up of patches for SQL Server 2008 RTM.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1806.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/969531/en-us">969531</a></td>
+      <td>
+        Cumulative Update 5 for SQL Server 2008</td>
+      <td>
+        The 5th roll-up of patches for SQL Server 2008 RTM.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1798.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/963036">963036</a></td>
+      <td>
+        Cumulative Update 4 for SQL Server 2008</td>
+      <td>
+        The fourth roll-up of patches since the RTM version.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1787.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/kb/960484">960484</a></td>
+      <td>
+        Cumulative update package 3 for SQL Server 2008</td>
+      <td>
+        The third roll-up of patches since the RTM version.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1779.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/default.aspx/kb/958186/en-us">958186</a></td>
+      <td>
+        Cumulative update package 2 for SQL Server 2008</td>
+      <td>
+        The second roll-up of patches since the RTM version.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1763.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/default.aspx/kb/956717">956717</a></td>
+      <td>
+        Cumulative update package 1 for SQL Server 2008</td>
+      <td>
+        The first roll-up of patches since the RTM version.</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1755.00</b></td>
+      <td>
+        <a href="http://support.microsoft.com/default.aspx/kb/957387">957387</a></td>
+      <td>
+        FIX: No records may be returned when you call the SQLExecute function to execute a prepared statement and you use the SQL Native Client ODBC Driver in SQL Server 2008</td>
+    </tr>
+    <tr>
+      <td>
+        <b>10.0.1600.22</b></td>
+      <td>
+        RTM</td>
+      <td>
+      </td>
+      <td>
+        The first public, supported version of SQL Server 2008</td>
+    </tr>
+    <tr>
+      <td>
+        10.00.1300.13</td>
+      <td>
+        February CTP</td>
+      <td>
+        Feb 2008</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        10.00.1049.14</td>
+      <td>
+        July CTP</td>
+      <td>
+        July 2007</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        10.00.1019.17</td>
+      <td>
+        June CTP</td>
+      <td>
+        CTP from June 2007</td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body></html>
