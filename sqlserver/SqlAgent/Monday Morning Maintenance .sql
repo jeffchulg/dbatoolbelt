@@ -1,8 +1,11 @@
+USE [msdb]
+GO
 
+/****** Object:  Job [SQL Server Maintenance]    Script Date: 01/04/2013 13:12:34 ******/
 BEGIN TRANSACTION
 DECLARE @ReturnCode INT
 SELECT @ReturnCode = 0
-/****** Object:  JobCategory [Database Maintenance]    Script Date: 10/18/2012 10:18:49 ******/
+/****** Object:  JobCategory [Database Maintenance]    Script Date: 01/04/2013 13:12:35 ******/
 IF NOT EXISTS (SELECT name FROM msdb.dbo.syscategories WHERE name=N'Database Maintenance' AND category_class=1)
 BEGIN
 EXEC @ReturnCode = msdb.dbo.sp_add_category @class=N'JOB', @type=N'LOCAL', @name=N'Database Maintenance'
@@ -25,7 +28,7 @@ Delete backup records over 90 days',
 		@owner_login_name=N'sa', 
 		@notify_email_operator_name=N'DBA', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
-
+/****** Object:  Step [Cycle the Server log]    Script Date: 01/04/2013 13:12:36 ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Cycle the Server log', 
 		@step_id=1, 
 		@cmdexec_success_code=0, 
@@ -40,7 +43,7 @@ EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Cycle th
 		@database_name=N'master', 
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
-
+/****** Object:  Step [Remove old DBMail Entries]    Script Date: 01/04/2013 13:12:36 ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Remove old DBMail Entries', 
 		@step_id=2, 
 		@cmdexec_success_code=0, 
@@ -62,9 +65,25 @@ EXECUTE msdb.dbo.sysmail_delete_log_sp @logged_before = @Delete_Date',
 		@database_name=N'msdb', 
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
-
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Delete old backup records', 
+/****** Object:  Step [Agent History Maintenance]    Script Date: 01/04/2013 13:12:36 ******/
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Agent History Maintenance', 
 		@step_id=3, 
+		@cmdexec_success_code=0, 
+		@on_success_action=3, 
+		@on_success_step_id=0, 
+		@on_fail_action=2, 
+		@on_fail_step_id=0, 
+		@retry_attempts=0, 
+		@retry_interval=0, 
+		@os_run_priority=0, @subsystem=N'TSQL', 
+		@command=N'DECLARE @oldjobdate DATETIME = DATEADD(d,-20, GETDATE())
+EXEC msdb.dbo.sp_purge_jobhistory @oldest_date= @oldjobdate', 
+		@database_name=N'msdb', 
+		@flags=0
+IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
+/****** Object:  Step [Delete old backup records]    Script Date: 01/04/2013 13:12:36 ******/
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Delete old backup records', 
+		@step_id=4, 
 		@cmdexec_success_code=0, 
 		@on_success_action=1, 
 		@on_success_step_id=0, 
