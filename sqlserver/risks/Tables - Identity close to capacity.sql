@@ -1,5 +1,4 @@
--- I am pretty sure this came from Michelle Uford and I need to look it up and document.
-
+-- source http://dbpedias.com/blogs/michelle-ufford/identity-columns-are-you-nearing-the-limits/
 /* Define how close we are to the value limit
    before we start throwing up the red flag.
    The higher the value, the closer to the limit. */
