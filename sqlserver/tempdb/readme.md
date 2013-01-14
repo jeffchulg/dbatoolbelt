@@ -24,6 +24,4 @@ Things that use tempdb (or - why is this important)
  * Version store
 [source](http://sqlserverpedia.com/wiki/TempDB/)
 
-
-Postgres
----
+[good stackoverflow answer for tempdb optimiation](http://stackoverflow.com/a/362636/91254)
