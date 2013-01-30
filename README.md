@@ -16,4 +16,9 @@ These 3 are a mainstay and will be staying in the root.  Use the sub folders to 
 
 Postgres
 ---
-In Progress.
+In progress
+
+
+Redis
+---
+In progress
